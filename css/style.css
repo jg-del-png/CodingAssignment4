@@ -1,0 +1,85 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+#header {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* ROW 2 */
+#row2 {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+/* ROW 2 COLUMNS */
+#links {
+  width: 20%;
+  float: left;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#main {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#tools {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* ROW 3 */
+#row3 {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+/* ROW 3 COLUMNS */
+#ingredients {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#equipment {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#directions {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* FOOTER */
+#footer {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid black;
+  text-align: center;
+}
