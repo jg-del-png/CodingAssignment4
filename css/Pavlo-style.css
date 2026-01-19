@@ -1,85 +1,92 @@
 /* GLOBAL RESET */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* BODY */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
 /* HEADER */
-#header {
-  width: 100%;
-  padding: 20px;
-  border: 2px solid black;
-  text-align: center;
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+/* ROWS */
+.row {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* COLUMNS */
+.column {
+    float: left;
+    padding: 10px;
+    border: 1px solid #000;
 }
 
 /* ROW 2 */
-#row2 {
-  width: 100%;
-  overflow: hidden;
-  border: 2px solid black;
+.row2 .links {
+    width: 20%;
 }
 
-/* ROW 2 COLUMNS */
-#links {
-  width: 20%;
-  float: left;
-  padding: 10px;
-  border: 2px solid black;
+.row2 .main {
+    width: 50%;
 }
 
-#main {
-  width: 50%;
-  float: left;
-  padding: 10px;
-  border: 2px solid black;
-}
-
-#tools {
-  width: 30%;
-  float: left;
-  padding: 10px;
-  border: 2px solid black;
+.row2 .tools {
+    width: 30%;
 }
 
 /* ROW 3 */
-#row3 {
-  width: 100%;
-  overflow: hidden;
-  border: 2px solid black;
+.row3 .ingredients,
+.row3 .equipment,
+.row3 .directions {
+    width: 33.33%;
 }
 
-/* ROW 3 COLUMNS */
-#ingredients {
-  width: 33.33%;
-  float: left;
-  padding: 10px;
-  border: 2px solid black;
-}
-
-#equipment {
-  width: 33.33%;
-  float: left;
-  padding: 10px;
-  border: 2px solid black;
-}
-
-#directions {
-  width: 33.33%;
-  float: left;
-  padding: 10px;
-  border: 2px solid black;
+/* CLEAR FLOATS */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* FOOTER */
-#footer {
-  width: 100%;
-  padding: 15px;
-  border: 2px solid black;
-  text-align: center;
+footer {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 20px;
+}
+
+/* FIGURE */
+figure {
+    text-align: center;
+    margin: 10px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
 }
