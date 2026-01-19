@@ -2,89 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Team Recipes</title>
+    <title>Pavlo's Kimchi Recipe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/Pavlo-style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="Eiki-index.html">Eiki's Recipe</a>
-        <a href="julie-index.html">Julie's Recipe</a>
-        <a href="pavlo-index.html">Pavlo's Recipe</a>
-        <a href="evan-index.html">Evan's Recipe</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="Eiki-index.html">Eiki's Recipe</a>
+            <a href="julie-index.html">Julie's Recipe</a>
+            <a href="pavlo-index.html">Pavlo's Recipe</a>
+            <a href="evan-index.html">Evan's Recipe</a>
+        </nav>
+        <h1>Pavlo's Kimchi Recipe</h1>
+    </header>
 
-     <h1>Pavlo's Kimchi Recipe</h1>
-    <h2>Kimchi (Traditional Korean Fermented Cabbage)</h2>
-    <p>Recipe by: Pavlo | Source: <a href="https://hotcooking.co.uk/recipes/kimchi/">HotCooking.co.uk</a></p>
+    <section class="row row2">
+        <div class="column links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Eiki-index.html">Eiki</a></li>
+                <li><a href="julie-index.html">Julie</a></li>
+                <li><a href="pavlo-index.html">Pavlo</a></li>
+                <li><a href="evan-index.html">Evan</a></li>
+            </ul>
+        </div>
 
-    <h3>Ingredients</h3>
-    <ul>
-      <li>Napa cabbage</li>
-      <li>Non-iodized salt</li>
-      <li>Garlic cloves</li>
-      <li>Ginger</li>
-      <li>Fish sauce</li>
-      <li>Gochugaru (Korean chilli powder)</li>
-      <li>Sriracha or gochujang</li>
-      <li>Sugar</li>
-      <li>Rice vinegar</li>
-      <li>Spring onions</li>
-      <li>Carrot and radishes</li>
-    </ul>
+        <div class="column main">
+            <h2>Kimchi (Traditional Korean Fermented Cabbage)</h2>
+            <figure>
+                <img src="../images/kimchi.jpg" alt="Kimchi dish" height="250">
+                <figcaption>Kimchi fermented cabbage (Creative Commons image)</figcaption>
+            </figure>
+            <p>Recipe by: Pavlo | Source: <a href="https://hotcooking.co.uk/recipes/kimchi/">HotCooking.co.uk</a></p>
+        </div>
 
-    <!-- Equipment section commented out as per assignment -->
-    <!--
-    <h3>Equipment</h3>
-    <ul>
-      <li>Bowl</li>
-      <li>Knife</li>
-      <li>Cutting board</li>
-    </ul>
-    -->
+        <div class="column tools">
+            <h3>Conversion</h3>
+            <input type="text" id="tblspn" name="tblspn"> =
+            <input type="text" id="cups" name="cups">
 
-    <h3>Directions</h3>
-    <ol>
-      <li>Cut and salt the cabbage, soak for a few hours.</li>
-      <li>Make the chilli paste with garlic, ginger, sauces and spices.</li>
-      <li>Mix all vegetables with the chilli paste.</li>
-      <li>Pack into a clean jar and ferment at room temperature.</li>
-    </ol>
+            <h3 class="rate">Rate This Recipe</h3>
+            <fieldset>
+                <legend>How difficult is this recipe?</legend>
+                <input type="radio" id="easy" name="difficulty"> Easy
+                <input type="radio" id="med" name="difficulty"> Intermediate
+                <input type="radio" id="hard" name="difficulty"> Hard
+            </fieldset>
+        </div>
+    </section>
 
-    <hr>
-    <p style="text-align:right;">This page created as academic activity only.</p>
+    <section class="row row3">
+        <div class="column ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Napa cabbage</li>
+                <li>Non-iodized salt</li>
+                <li>Garlic cloves</li>
+                <li>Ginger</li>
+                <li>Fish sauce</li>
+                <li>Gochugaru (Korean chilli powder)</li>
+                <li>Sriracha or gochujang</li>
+                <li>Sugar</li>
+                <li>Rice vinegar</li>
+                <li>Spring onions</li>
+                <li>Carrot and radishes</li>
+            </ul>
+        </div>
 
-    <h3>Conversion</h3>
-    <input type="text" id="tblspn" name="tblspn"> =
-    <input type="text" id="cups" name="cups">
+        <div class="column equipment">
+            <h3>Equipment</h3>
+            <ul>
+                <li>Bowl</li>
+                <li>Knife</li>
+                <li>Cutting board</li>
+            </ul>
+        </div>
 
-    <h3 class="rate">Rate This Recipe</h3>
-    <fieldset style="width: 250px;">
-      <legend>How difficult is this recipe?</legend>
-      <input type="radio" id="easy" name="difficulty"> Easy
-      <input type="radio" id="med" name="difficulty"> Intermediate
-      <input type="radio" id="hard" name="difficulty"> Hard
-    </fieldset>
-
-    <figure>
-      <img src="../images/kimchi.jpg" alt="Kimchi dish" height="250">
-      <figcaption>Kimchi fermented cabbage (Creative Commons image)</figcaption>
-    </figure>
+        <div class="column directions">
+            <h3>Directions</h3>
+            <ol>
+                <li>Cut and salt the cabbage, soak for a few hours.</li>
+                <li>Make the chilli paste with garlic, ginger, sauces and spices.</li>
+                <li>Mix all vegetables with the chilli paste.</li>
+                <li>Pack into a clean jar and ferment at room temperature.</li>
+            </ol>
+        </div>
+    </section>
 
     <footer>
-        <p>Academic Notice: This page is for educational purposes only.</p>
+        <p>This page created as academic activity only.</p>
         <p><a href="https://www.bellevuecollege.edu">Bellevue College</a></p>
     </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
