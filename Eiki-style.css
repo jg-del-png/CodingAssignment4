@@ -1,0 +1,106 @@
+/* Basic layout and readable colors */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  /* Use the same warm cream background site-wide to remove the outer gray frame */
+  background-color: #fbf5ee;
+  color: #333;
+}
+
+.hero-wrapper { position: relative; }
+
+/* subtle overlay for top area (works once .hero-wrapper wraps .container) */
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* disable overlay so it doesn't darken the page */
+  background: transparent;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  /* Slightly lighter panel on same cream background; remove heavy shadow */
+  background-color: #fffdf8;
+  color: #5b4638; /* readable brown text */
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+
+h1 { font-size: 1.8rem; margin-top: 0; color: #fff6ea; }
+h2 { font-size: 1.2rem; color: #fff6ea; }
+h3 { color: #fff6ea; margin-top: 1rem; }
+
+ul, ol { line-height: 1.6; color: #2f2f2f; }
+
+/* Readability base */
+html { font-size: 16px; }
+body { line-height: 1.65; }
+
+.container {
+  box-sizing: border-box;
+  width: min(900px, calc(100% - 40px));
+}
+
+h1 { font-weight: 700; }
+li, p { color: #5b4638; }
+
+figure img { display:block; margin: 12px auto; max-width:100%; height:auto; }
+figcaption { font-size:0.9rem; color:#e8dfd2; text-align:center; }
+
+/* Replace inline fieldset styling */
+fieldset.rating {
+  width: 250px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(0,0,0,0.06);
+  color: inherit;
+}
+
+/* Stack radio options vertically for readability */
+fieldset.rating label {
+  display: block;
+  margin: 0.45rem 0;
+}
+
+fieldset.rating input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* credit paragraph */
+p.credit { text-align: right; color: #e8dfd2; font-size: 0.9rem; }
+
+/* link colors */
+a { color: #ffd69a; }
+a:visited { color: #e2b27a; }
+
+/* small responsive layout for future sidebar */
+@media (min-width: 800px) {
+  .container { padding: 32px; }
+}
+/* Readability tweaks you asked to apply */
+html { font-size: 18px; }
+body { line-height: 1.8; }
+
+.container {
+  padding-left: 28px;
+  padding-right: 28px;
+  box-sizing: border-box;
+  width: min(900px, calc(100% - 40px));
+}
+
+h1 { font-weight: 700; }
+/* Ensure body and list text use readable brown */
+li, p { color: #5b4638; }
+
+/* Final color adjustments requested: headings and muted captions */
+h1, h2, h3 { color: #4a362d; }
+figcaption, p.credit { color: #8b7669; }
